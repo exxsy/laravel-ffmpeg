@@ -1,6 +1,6 @@
 <?php
 
-namespace ProtoneMedia\LaravelFFMpeg\Exporters;
+namespace ProtoneMedia\LaravelFFMpeg\Filtersw;
 
 use FFMpeg\Coordinate\Dimension;
 use FFMpeg\Filters\AdvancedMedia\ComplexFilters;

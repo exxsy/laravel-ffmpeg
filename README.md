@@ -146,7 +146,7 @@ FFMpeg::openUrl('https://videocoursebuilder.com/lesson-2.mp4', [
 
 ### Handling exceptions
 
-When the encoding fails, a `ProtoneMedia\LaravelFFMpeg\Exporters\EncodingException` shall be thrown, which extends the underlying `FFMpeg\Exception\RuntimeException` class. This class has two methods that can help you identify the problem. Using the `getCommand` method, you can get the executed command with all parameters. The `getErrorOutput` method gives you a full output log.
+When the encoding fails, a `ProtoneMedia\LaravelFFMpeg\Exceptions\EncodingException` shall be thrown, which extends the underlying `FFMpeg\Exception\RuntimeException` class. This class has two methods that can help you identify the problem. Using the `getCommand` method, you can get the executed command with all parameters. The `getErrorOutput` method gives you a full output log.
 
 In previous versions of this package, the message of the exception was always *Encoding failed*. You can downgrade to this message by updating the `set_command_and_error_output_on_exception` configuration key to `false`.
 

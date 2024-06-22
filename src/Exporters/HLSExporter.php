@@ -38,7 +38,7 @@ class HLSExporter extends MediaExporter
     private $pendingFormats;
 
     /**
-     * @var \ProtoneMedia\LaravelFFMpeg\Exporters\PlaylistGenerator
+     * @var \ProtoneMedia\LaravelFFMpeg\Generators\PlaylistGenerator
      */
     private $playlistGenerator;
 
@@ -77,7 +77,7 @@ class HLSExporter extends MediaExporter
      * Method to set a different playlist generator than
      * the default HLSPlaylistGenerator.
      *
-     * @param \ProtoneMedia\LaravelFFMpeg\Exporters\PlaylistGenerator $playlistGenerator
+     * @param \ProtoneMedia\LaravelFFMpeg\Generators\PlaylistGenerator $playlistGenerator
      * @return self
      */
     public function withPlaylistGenerator(PlaylistGenerator $playlistGenerator): self
@@ -250,7 +250,7 @@ class HLSExporter extends MediaExporter
      * Returns a media collection of all segment playlists.
      *
      * @param string $path
-     * @throws \ProtoneMedia\LaravelFFMpeg\Exporters\NoFormatException
+     * @throws \ProtoneMedia\LaravelFFMpeg\Exceptions\NoFormatException
      * @return \Illuminate\Support\Collection
      */
     private function prepareSaving(string $path = null): Collection
