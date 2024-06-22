@@ -1,6 +1,6 @@
 <?php
 
-namespace ProtoneMedia\LaravelFFMpeg\Exporters;
+namespace ProtoneMedia\LaravelFFMpeg\Exceptions;
 
 use Alchemy\BinaryDriver\Exception\ExecutionFailureException;
 use FFMpeg\Exception\RuntimeException;

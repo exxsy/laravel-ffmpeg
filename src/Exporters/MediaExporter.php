@@ -14,6 +14,11 @@ use ProtoneMedia\LaravelFFMpeg\Filesystem\Media;
 use ProtoneMedia\LaravelFFMpeg\Filters\TileFactory;
 use ProtoneMedia\LaravelFFMpeg\MediaOpener;
 use ProtoneMedia\LaravelFFMpeg\Support\ProcessOutput;
+use ProtoneMedia\LaravelFFMpeg\Traits\HandlesAdvancedMedia;
+use ProtoneMedia\LaravelFFMpeg\Traits\HandlesConcatenation;
+use ProtoneMedia\LaravelFFMpeg\Traits\HandlesFrames;
+use ProtoneMedia\LaravelFFMpeg\Traits\HandlesTimelapse;
+use ProtoneMedia\LaravelFFMpeg\Traits\HasProgressListener;
 
 /**
  * @mixin \ProtoneMedia\LaravelFFMpeg\Drivers\PHPFFMpeg

@@ -3,7 +3,8 @@
 namespace ProtoneMedia\LaravelFFMpeg\Filesystem;
 
 use Illuminate\Support\Collection;
-use ProtoneMedia\LaravelFFMpeg\FFMpeg\InteractsWithHttpHeaders;
+use ProtoneMedia\LaravelFFMpeg\Traits\HasInputOptions;
+use ProtoneMedia\LaravelFFMpeg\Traits\InteractsWithHttpHeaders;
 
 class MediaOnNetwork
 {

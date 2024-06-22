@@ -3,6 +3,7 @@
 namespace ProtoneMedia\LaravelFFMpeg\FFMpeg;
 
 use FFMpeg\Media\Audio;
+use ProtoneMedia\LaravelFFMpeg\Traits\RebuildsCommands;
 
 class AudioMedia extends Audio
 {

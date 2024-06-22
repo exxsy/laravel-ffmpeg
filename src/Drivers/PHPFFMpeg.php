@@ -21,6 +21,8 @@ use ProtoneMedia\LaravelFFMpeg\FFMpeg\AudioMedia;
 use ProtoneMedia\LaravelFFMpeg\FFMpeg\FFProbe;
 use ProtoneMedia\LaravelFFMpeg\FFMpeg\VideoMedia;
 use ProtoneMedia\LaravelFFMpeg\Filesystem\MediaCollection;
+use ProtoneMedia\LaravelFFMpeg\Traits\InteractsWithFilters;
+use ProtoneMedia\LaravelFFMpeg\Traits\InteractsWithMediaStreams;
 
 /**
  * @mixin \FFMpeg\Media\AbstractMediaType

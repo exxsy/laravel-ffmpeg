@@ -1,9 +1,11 @@
 <?php
 
-namespace ProtoneMedia\LaravelFFMpeg\FFMpeg;
+namespace ProtoneMedia\LaravelFFMpeg\Traits;
 
 use FFMpeg\Format\FormatInterface;
 use Illuminate\Support\Collection;
+use ProtoneMedia\LaravelFFMpeg\Traits\InteractsWithBeforeSavingCallbacks;
+use ProtoneMedia\LaravelFFMpeg\Traits\InteractsWithHttpHeaders;
 
 trait RebuildsCommands
 {

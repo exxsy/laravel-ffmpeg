@@ -3,6 +3,7 @@
 namespace ProtoneMedia\LaravelFFMpeg\FFMpeg;
 
 use FFMpeg\Media\Video;
+use ProtoneMedia\LaravelFFMpeg\Traits\RebuildsCommands;
 
 class VideoMedia extends Video
 {

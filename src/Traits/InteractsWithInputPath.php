@@ -1,6 +1,6 @@
 <?php
 
-namespace ProtoneMedia\LaravelFFMpeg\FFMpeg;
+namespace ProtoneMedia\LaravelFFMpeg\Traits;
 
 trait InteractsWithInputPath
 {

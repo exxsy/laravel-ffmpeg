@@ -3,6 +3,7 @@
 namespace ProtoneMedia\LaravelFFMpeg\Filesystem;
 
 use Illuminate\Filesystem\FilesystemAdapter;
+use ProtoneMedia\LaravelFFMpeg\Traits\HasInputOptions;
 
 class Media
 {

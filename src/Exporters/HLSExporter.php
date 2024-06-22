@@ -13,6 +13,7 @@ use Illuminate\Support\Collection;
 use ProtoneMedia\LaravelFFMpeg\Filesystem\Disk;
 use ProtoneMedia\LaravelFFMpeg\Filesystem\Media;
 use ProtoneMedia\LaravelFFMpeg\MediaOpener;
+use ProtoneMedia\LaravelFFMpeg\Traits\EncryptsHLSSegments;
 
 class HLSExporter extends MediaExporter
 {

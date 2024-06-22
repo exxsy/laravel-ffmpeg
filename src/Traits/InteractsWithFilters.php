@@ -1,6 +1,6 @@
 <?php
 
-namespace ProtoneMedia\LaravelFFMpeg\Drivers;
+namespace ProtoneMedia\LaravelFFMpeg\Traits;
 
 use Closure;
 use FFMpeg\Coordinate\Dimension;

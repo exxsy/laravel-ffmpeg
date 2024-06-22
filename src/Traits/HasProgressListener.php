@@ -1,6 +1,6 @@
 <?php
 
-namespace ProtoneMedia\LaravelFFMpeg\Exporters;
+namespace ProtoneMedia\LaravelFFMpeg\Traits;
 
 use Closure;
 use Evenement\EventEmitterInterface;

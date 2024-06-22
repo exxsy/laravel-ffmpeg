@@ -14,6 +14,15 @@ class HLSPlaylistGenerator implements PlaylistGenerator
     public const PLAYLIST_START = '#EXTM3U';
     public const PLAYLIST_END   = '#EXT-X-ENDLIST';
 
+    public bool $implementPlaylistEnd = true;
+
+    public function disablePlaylistEnd()
+    {
+        $this->implementPlaylistEnd = false;
+
+        return $this;
+    }
+
     /**
      * Return the line from the master playlist that references the given segment playlist.
      *

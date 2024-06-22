@@ -1,6 +1,6 @@
 <?php
 
-namespace ProtoneMedia\LaravelFFMpeg\Drivers;
+namespace ProtoneMedia\LaravelFFMpeg\Traits;
 
 use FFMpeg\FFProbe\DataMapping\Stream;
 use Illuminate\Support\Arr;
