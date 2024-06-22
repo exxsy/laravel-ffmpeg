@@ -5,12 +5,14 @@ namespace ProtoneMedia\LaravelFFMpeg\FFMpeg;
 use FFMpeg\Media\AdvancedMedia as MediaAdvancedMedia;
 use Illuminate\Support\Arr;
 use ProtoneMedia\LaravelFFMpeg\Traits\InteractsWithBeforeSavingCallbacks;
+use ProtoneMedia\LaravelFFMpeg\Traits\InteractsWithHttpHeaders;
 use ProtoneMedia\LaravelFFMpeg\Traits\InteractsWithMediaStreams;
 
 class AdvancedMedia extends MediaAdvancedMedia
 {
     use InteractsWithBeforeSavingCallbacks;
     use InteractsWithMediaStreams;
+    use InteractsWithHttpHeaders;
 
     /**
      * Create a new instance of this class with the instance of the underlying library.

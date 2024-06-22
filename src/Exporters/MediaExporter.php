@@ -13,6 +13,7 @@ use ProtoneMedia\LaravelFFMpeg\FFMpeg\StdListener;
 use ProtoneMedia\LaravelFFMpeg\Filesystem\Disk;
 use ProtoneMedia\LaravelFFMpeg\Filesystem\Media;
 use ProtoneMedia\LaravelFFMpeg\Filters\TileFactory;
+use ProtoneMedia\LaravelFFMpeg\Generators\VTTPreviewThumbnailsGenerator;
 use ProtoneMedia\LaravelFFMpeg\MediaOpener;
 use ProtoneMedia\LaravelFFMpeg\Support\ProcessOutput;
 use ProtoneMedia\LaravelFFMpeg\Traits\HandlesAdvancedMedia;

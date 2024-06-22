@@ -5,6 +5,7 @@ namespace ProtoneMedia\LaravelFFMpeg\Traits;
 use Closure;
 use Illuminate\Filesystem\Filesystem;
 use Illuminate\Support\Collection;
+use ProtoneMedia\LaravelFFMpeg\Exporters\HLSExporter;
 use ProtoneMedia\LaravelFFMpeg\FFMpeg\StdListener;
 use ProtoneMedia\LaravelFFMpeg\Filesystem\Disk;
 use ProtoneMedia\LaravelFFMpeg\Filesystem\TemporaryDirectories;
