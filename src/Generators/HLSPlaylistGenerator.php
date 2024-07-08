@@ -4,6 +4,7 @@ namespace ProtoneMedia\LaravelFFMpeg\Generators;
 
 use Illuminate\Support\Collection;
 use ProtoneMedia\LaravelFFMpeg\Drivers\PHPFFMpeg;
+use ProtoneMedia\LaravelFFMpeg\Exporters\HLSExporter;
 use ProtoneMedia\LaravelFFMpeg\Filesystem\Media;
 use ProtoneMedia\LaravelFFMpeg\Http\DynamicHLSPlaylist;
 use ProtoneMedia\LaravelFFMpeg\MediaOpener;

@@ -4,6 +4,7 @@ namespace ProtoneMedia\LaravelFFMpeg\Traits;
 
 use FFMpeg\Format\FormatInterface;
 use ProtoneMedia\LaravelFFMpeg\FFMpeg\AdvancedOutputMapping;
+use ProtoneMedia\LaravelFFMpeg\FFMpeg\BasicOutputMapping;
 use ProtoneMedia\LaravelFFMpeg\Filesystem\Media;
 
 trait HandlesAdvancedMedia

@@ -1,6 +1,6 @@
 <?php
 
-namespace ProtoneMedia\LaravelFFMpeg\Drivers;
+namespace ProtoneMedia\LaravelFFMpeg\Exceptions;
 
 use Exception;
 

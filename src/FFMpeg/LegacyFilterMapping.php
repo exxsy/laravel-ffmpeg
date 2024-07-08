@@ -5,7 +5,7 @@ namespace ProtoneMedia\LaravelFFMpeg\FFMpeg;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Collection;
 use ProtoneMedia\LaravelFFMpeg\Drivers\PHPFFMpeg;
-use ProtoneMedia\LaravelFFMpeg\Exporters\HLSVideoFilters;
+use ProtoneMedia\LaravelFFMpeg\Filters\HLSVideoFilters;
 use ProtoneMedia\LaravelFFMpeg\Filesystem\MediaCollection;
 
 class LegacyFilterMapping

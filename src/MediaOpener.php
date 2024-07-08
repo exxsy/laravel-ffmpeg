@@ -11,6 +11,7 @@ use Illuminate\Support\Arr;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Traits\ForwardsCalls;
 use ProtoneMedia\LaravelFFMpeg\Drivers\PHPFFMpeg;
+use ProtoneMedia\LaravelFFMpeg\Exporters\DASHExporter;
 use ProtoneMedia\LaravelFFMpeg\Exporters\HLSExporter;
 use ProtoneMedia\LaravelFFMpeg\Exporters\MediaExporter;
 use ProtoneMedia\LaravelFFMpeg\FFMpeg\ImageFormat;
@@ -205,6 +206,14 @@ class MediaOpener
     public function exportForHLS(): HLSExporter
     {
         return new HLSExporter($this->getAdvancedDriver());
+    }
+
+    /**
+     * Returns an instance of HLSExporter with the driver forced to AdvancedMedia.
+     */
+    public function exportForDASH(): DASHExporter
+    {
+        return new DASHExporter($this->getAdvancedDriver());
     }
 
     /**

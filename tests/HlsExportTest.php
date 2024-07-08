@@ -5,9 +5,9 @@ namespace ProtoneMedia\LaravelFFMpeg\Tests;
 use FFMpeg\Filters\AdvancedMedia\ComplexFilters;
 use FFMpeg\Filters\Video\VideoFilters;
 use Illuminate\Support\Facades\Storage;
-use ProtoneMedia\LaravelFFMpeg\Exporters\HLSPlaylistGenerator;
-use ProtoneMedia\LaravelFFMpeg\Exporters\HLSVideoFilters;
-use ProtoneMedia\LaravelFFMpeg\Exporters\NoFormatException;
+use ProtoneMedia\LaravelFFMpeg\Generators\HLSPlaylistGenerator;
+use ProtoneMedia\LaravelFFMpeg\Filters\HLSVideoFilters;
+use ProtoneMedia\LaravelFFMpeg\Exceptions\NoFormatException;
 use ProtoneMedia\LaravelFFMpeg\FFMpeg\CopyVideoFormat;
 use ProtoneMedia\LaravelFFMpeg\Filters\WatermarkFactory;
 use ProtoneMedia\LaravelFFMpeg\MediaOpener;
@@ -196,7 +196,7 @@ class HlsExportTest extends TestCase
 
         $this->assertPlaylistPattern(Storage::disk('local')->get('adaptive.m3u8'), [
             '#EXTM3U',
-            static::streamInfoPattern('1920x1080', "25.000", false),
+            static::streamInfoPattern('1920x1080', "25.000", true),
             'adaptive_0_0.m3u8',
             '#EXT-X-ENDLIST',
         ]);

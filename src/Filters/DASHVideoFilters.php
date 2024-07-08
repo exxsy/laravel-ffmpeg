@@ -9,9 +9,9 @@ use Illuminate\Support\Str;
 use ProtoneMedia\LaravelFFMpeg\Drivers\PHPFFMpeg;
 use ProtoneMedia\LaravelFFMpeg\Filters\WatermarkFactory;
 
-class HLSVideoFilters
+class DASHVideoFilters
 {
-    public const MAPPING_GLUE = "_hls_";
+    public const MAPPING_GLUE = "_dash_";
 
     /**
      * @var \ProtoneMedia\LaravelFFMpeg\Drivers\PHPFFMpeg

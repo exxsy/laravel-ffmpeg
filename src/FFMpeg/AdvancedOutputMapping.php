@@ -6,7 +6,7 @@ use FFMpeg\Format\FormatInterface;
 use FFMpeg\Format\Video\DefaultVideo;
 use FFMpeg\Media\AdvancedMedia;
 use Illuminate\Support\Collection;
-use ProtoneMedia\LaravelFFMpeg\Exporters\HLSVideoFilters;
+use ProtoneMedia\LaravelFFMpeg\Filters\HLSVideoFilters;
 use ProtoneMedia\LaravelFFMpeg\Filesystem\Media;
 
 /**

@@ -4,7 +4,7 @@ namespace ProtoneMedia\LaravelFFMpeg\Traits;
 
 use FFMpeg\FFProbe\DataMapping\Stream;
 use Illuminate\Support\Arr;
-use ProtoneMedia\LaravelFFMpeg\Filesystem\Media;
+use ProtoneMedia\LaravelFFMpeg\Exceptions\UnknownDurationException;
 use ProtoneMedia\LaravelFFMpeg\Filesystem\MediaCollection;
 
 trait InteractsWithMediaStreams

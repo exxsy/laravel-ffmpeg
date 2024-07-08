@@ -2,7 +2,7 @@
 
 namespace ProtoneMedia\LaravelFFMpeg\Tests;
 
-use ProtoneMedia\LaravelFFMpeg\Exporters\VTTPreviewThumbnailsGenerator;
+use ProtoneMedia\LaravelFFMpeg\Generators\VTTPreviewThumbnailsGenerator;
 use ProtoneMedia\LaravelFFMpeg\Filters\TileFactory;
 use Spatie\Snapshots\MatchesSnapshots;
 
